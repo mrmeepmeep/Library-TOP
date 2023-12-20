@@ -1,0 +1,151 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100h;
+    font-family: monospace;
+}
+form {
+    display: grid;
+    gap: 10px;
+}
+
+
+.container-content {
+    display: grid;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+.container{
+    max-height: 100vh;
+    background-color:#f4f4f5;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.book-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sidebar {
+    height: 100vh;
+    grid-column: 1/2;
+    background-color: #f4f4f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 2px 8px rgb(0, 0, 0,0.075);
+    font-weight: bold;
+}
+
+.sidebar h3 {
+    margin-bottom: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.sidebar p {
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 25px;
+    padding: 30px;
+    font-size: 0.8rem;
+}
+.sidebar-title {
+    font-size: 1.5rem!important;
+}
+.title {
+    color: grey;
+}
+#open {
+    position: absolute;
+    left: 90%;
+    top: 85%;
+    border: none;
+    border-radius: 50%;
+    display: block;
+    width: 75px;
+    height: 75px;
+    font-size: 1.5em;
+    transition: 0.2s;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0);
+}
+#open:hover {
+    background-color:rgb(50, 50, 50);
+}
+
+
+.card{
+    width: 170px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
+    word-wrap: break-word;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+.card button {
+    border: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: large;
+    position: relative;
+    left: 95%;
+    bottom: 75%;
+    height: 30px;
+    width: 30px;
+    transition: 0.1s;
+}
+
+.card button:hover {
+    color: grey;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+.title {
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.pages {
+    margin-top: 10px;
+    font-size: 0.7rem;
+}
+dialog {
+    padding: 20px;
+    border-radius: 5px;
+}
+dialog input {
+    padding: 5px 10px;
+}
+
+dialog span {
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+dialog button {
+    border: none;
+    padding: 10px;
+    background-color: #030712;
+    color: white;
+    transition: 0.1s
+}
+dialog button:hover {
+    background-color: rgb(86, 86, 86);
+}
